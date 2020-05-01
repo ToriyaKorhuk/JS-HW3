@@ -1,4 +1,4 @@
-var Book = new Book();
+var book = new Book();
 
 this.title = 'Poema';
 
@@ -17,13 +17,12 @@ function Book(title,author, publisher,year, numberCopy, id, numberPages){
         return this.numberPages;
     }
 };
-function Book(){
+function book(){
     return this.title;
-
 }
 /*
 class Books[publisher, id, numberPages]*/
-function Journal( publisher, numberCopy,year, id, numberPages){
+function Journal(publisher, numberCopy,year, id, numberPages){
     this.publisher = publisher;
     this.numberCopy = numberCopy;
     this.year = year;
@@ -36,14 +35,15 @@ function Journal( publisher, numberCopy,year, id, numberPages){
     }
     
 }
-var Journal = new Journal();{
-Journal.numberPages = 32;
-Journal.year = 2020;
-if(Journal.numberPages>32)
+var journal = new Journal()
+{
+journal.numberPages = 32;
+journal.year = 2020;
+if(journal.numberPages>32)
 {
     console.log('Превышено допустимое количество страниц')
 }
 };
-alert('количество страниц:'+ Journal.getnumberPages());
-alert('год издательства:'+ Journal.getyear()); 
+alert('количество страниц:'+ journal.getnumberPages());
+alert('год издательства:'+ journal.getyear()); 
 
